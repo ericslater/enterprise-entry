@@ -8,6 +8,7 @@ Welcome to the _Next.js Enterprise Boilerplate_, an open-source template for ent
 > **Blazity** is a group of Next.js/Headless experts. Contact us at [contact@blazity.com](https://blazity.com) if you’d like to talk about your project or just to have a chat with us
 
 ## Features
+## Eric Style
 
 With this template, you get all the awesomeness you need:
 
