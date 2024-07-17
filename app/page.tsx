@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "lp-items"
 import Head from "next/head";
+import Image from "next/image";
 import SlaterHeader from "components/Header/SlaterHeader";
 
 export const metadata: Metadata = {
@@ -11,13 +12,6 @@ export const metadata: Metadata = {
   },
   openGraph: {
     url: "https://slaiter.com/",
-    images: [
-      {
-        width: 1200,
-        height: 630,
-        url: "https://raw.githubusercontent.com/Blazity/next-enterprise/main/.github/assets/project-logo.png",
-      },
-    ],
   },
 }
 
@@ -40,7 +34,7 @@ export default function Web() {
         <section className="w-10/12 md:w-8/12 lg:w-6/12 my-12">
           <div className="flex flex-col md:flex-row items-center mb-6">
             <div className="md:w-1/2 p-4">
-              <img src="/placeholder1.jpg" alt="Placeholder 1" className="w-full h-auto rounded-lg shadow-lg" />
+              <Image src="/Mission.jpeg" alt="Placeholder 3" width={800} height={621} className="w-full h-auto rounded-lg shadow-lg" />
             </div>
             <div className="md:w-1/2 p-4">
               <h2 className="text-2xl font-bold mb-2">Our Mission</h2>
@@ -50,7 +44,7 @@ export default function Web() {
 
           <div className="flex flex-col md:flex-row-reverse items-center mb-6">
             <div className="md:w-1/2 p-4">
-              <img src="/placeholder2.jpg" alt="Placeholder 2" className="w-full h-auto rounded-lg shadow-lg" />
+              <Image src="/Services.png" alt="Placeholder 3" width={1912} height={1301} className="w-full h-auto rounded-lg shadow-lg" />
             </div>
             <div className="md:w-1/2 p-4">
               <h2 className="text-2xl font-bold mb-2">Our Services</h2>
@@ -60,7 +54,7 @@ export default function Web() {
 
           <div className="flex flex-col md:flex-row items-center mb-6">
             <div className="md:w-1/2 p-4">
-              <img src="/placeholder3.jpg" alt="Placeholder 3" className="w-full h-auto rounded-lg shadow-lg" />
+              <Image src="/WhyUs.png" alt="Placeholder 3" width={1526} height={1283} className="w-full h-auto rounded-lg shadow-lg" />
             </div>
             <div className="md:w-1/2 p-4">
               <h2 className="text-2xl font-bold mb-2">Why Choose Us</h2>
@@ -70,7 +64,7 @@ export default function Web() {
         </section>
 
         <footer className="w-full bg-blue-600 py-6">
-          <p className="text-center text-white">© 2024 SLaiTER. All rights reserved.</p>
+          <p className="text-center text-white">© 2024 SLaiTER LLC. All rights reserved.</p>
           <p className="text-center text-white">🇺🇸 American Owned and Operated 🇺🇸</p>
           </footer>
       </main>

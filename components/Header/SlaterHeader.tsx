@@ -14,11 +14,11 @@ const SlaterHeader = () => {
     return (
         <header className="w-full bg-blue-600 py-6">
             <h1 className="text-6xl font-extrabold text-white text-center">
-                SL<span className="text-yellow-300">ai</span>TER
+                SL<span className="text-yellow-400">ai</span>TER
             </h1>
             <p className="text-xl text-white text-center">
                 Applied{' '}
-                <span className="text-yellow-300 font-bold">
+                <span className="text-yellow-400 font-bold">
                     {text}
                     <Cursor />
                 </span>
