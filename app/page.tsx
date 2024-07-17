@@ -3,9 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Metadata } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { Button } from "components/Button/Button";
 import SlaterHeader from "components/Header/SlaterHeader";
-import { LP_GRID_ITEMS } from "lp-items";
 
 export const metadata: Metadata = {
   title: "SLaiTER - Software Consulting",
@@ -56,7 +54,7 @@ export default function Web() {
             </div>
             <div className="md:w-1/2 p-4">
               <h2 className="text-2xl font-bold mb-2">Why Choose Us</h2>
-              <p className="text-gray-700">Our proven track record in delivering successful projects, combined with our deep understanding of the software landscape, makes us the perfect partner to help you navigate and thrive in today's digital world.</p>
+              <p className="text-gray-700">Our proven track record in delivering successful projects, combined with our deep understanding of the software landscape, makes us the perfect partner to help you navigate and thrive in our digital world.</p>
             </div>
           </div>
         </section>
