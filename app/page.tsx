@@ -1,9 +1,11 @@
-import { Metadata } from "next"
-import { Button } from "components/Button/Button"
-import { LP_GRID_ITEMS } from "lp-items"
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Metadata } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { Button } from "components/Button/Button";
 import SlaterHeader from "components/Header/SlaterHeader";
+import { LP_GRID_ITEMS } from "lp-items";
 
 export const metadata: Metadata = {
   title: "SLaiTER - Software Consulting",
@@ -11,9 +13,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   openGraph: {
-    url: "https://slaiter.com/",
+    url: "https://slaiter.com/"
   },
-}
+};
 
 export default function Web() {
   return (
@@ -25,10 +27,6 @@ export default function Web() {
       </Head>
 
       <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-        {/* <header className="w-full bg-blue-600 py-6">
-          <h1 className="text-4xl font-bold text-white text-center">SLaiTER</h1>
-          <p className="text-xl text-white text-center">Applied AI For Your Business.</p>
-        </header> */}
         <SlaterHeader />
 
         <section className="w-10/12 md:w-8/12 lg:w-6/12 my-12">
@@ -64,9 +62,14 @@ export default function Web() {
         </section>
 
         <footer className="w-full bg-blue-600 py-6">
-          <p className="text-center text-white">© 2024 SLaiTER LLC. All rights reserved.</p>
-          <p className="text-center text-white">🇺🇸 American Owned and Operated 🇺🇸</p>
-          </footer>
+        <div className="flex justify-center mb-4">
+          <a href="https://www.linkedin.com/in/eric-slater-66377676" target="_blank" rel="noopener noreferrer" className="underline ml-2">
+            <FontAwesomeIcon icon={faLinkedin} className="text-center mr-2 text-sm h-6"/>
+          </a>
+        </div>
+        <p className="text-center text-white">© 2024 SLaiTER LLC. All rights reserved.</p>
+        <p className="text-center text-white">🇺🇸 American Owned and Operated 🇺🇸</p>
+      </footer>
       </main>
     </div>
   );
