@@ -1,14 +1,16 @@
 import { Metadata } from "next"
 import { Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "lp-items"
+import Head from "next/head";
+import SlaterHeader from "components/Header/SlaterHeader";
 
 export const metadata: Metadata = {
-  title: "Next.js Enterprise Boilerplate",
+  title: "SLaiTER - Software Consulting",
   twitter: {
     card: "summary_large_image",
   },
   openGraph: {
-    url: "https://next-enterprise.vercel.app/",
+    url: "https://slaiter.com/",
     images: [
       {
         width: 1200,
@@ -21,45 +23,57 @@ export const metadata: Metadata = {
 
 export default function Web() {
   return (
-    <>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
-          <div className="mx-auto place-self-center">
-            <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
-              Next.js Enterprise Boilerplate
-            </h1>
-            <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-              Jumpstart your enterprise project with our feature-packed, high-performance Next.js boilerplate!
-              Experience rapid UI development, AI-powered code reviews, and an extensive suite of tools for a smooth and
-              enjoyable development process.
-            </p>
-            <Button href="https://github.com/Blazity/next-enterprise" className="mr-3">
-              Get started
-            </Button>
-            <Button
-              href="https://vercel.com/new/git/external?repository-url=https://github.com/Blazity/next-enterprise"
-              intent="secondary"
-            >
-              Deploy Now
-            </Button>
+    <div>
+      <Head>
+        <title>SLaiTER - Software Consulting</title>
+        <meta name="description" content="Applied AI For Your Business." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+        {/* <header className="w-full bg-blue-600 py-6">
+          <h1 className="text-4xl font-bold text-white text-center">SLaiTER</h1>
+          <p className="text-xl text-white text-center">Applied AI For Your Business.</p>
+        </header> */}
+        <SlaterHeader />
+
+        <section className="w-10/12 md:w-8/12 lg:w-6/12 my-12">
+          <div className="flex flex-col md:flex-row items-center mb-6">
+            <div className="md:w-1/2 p-4">
+              <img src="/placeholder1.jpg" alt="Placeholder 1" className="w-full h-auto rounded-lg shadow-lg" />
+            </div>
+            <div className="md:w-1/2 p-4">
+              <h2 className="text-2xl font-bold mb-2">Our Mission</h2>
+              <p className="text-gray-700">At SLaiTER, we are committed to helping small and medium businesses scale effectively and efficiently through advanced software solutions. Our expertise ensures your business keeps pace with the rapid evolution of technology.</p>
+            </div>
           </div>
-        </div>
-      </section>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
-          <div className="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
-            {LP_GRID_ITEMS.map((singleItem) => (
-              <div key={singleItem.title} className="flex flex-col items-center justify-center text-center">
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 p-1.5 text-blue-700 dark:bg-primary-900 lg:h-12 lg:w-12">
-                  {singleItem.icon}
-                </div>
-                <h3 className="mb-2 text-xl font-bold dark:text-white">{singleItem.title}</h3>
-                <p className="text-gray-500 dark:text-gray-400">{singleItem.description}</p>
-              </div>
-            ))}
+
+          <div className="flex flex-col md:flex-row-reverse items-center mb-6">
+            <div className="md:w-1/2 p-4">
+              <img src="/placeholder2.jpg" alt="Placeholder 2" className="w-full h-auto rounded-lg shadow-lg" />
+            </div>
+            <div className="md:w-1/2 p-4">
+              <h2 className="text-2xl font-bold mb-2">Our Services</h2>
+              <p className="text-gray-700">We provide a range of consulting services including software development, system integration, and digital transformation. Our team of experts works closely with you to tailor solutions that meet your unique business needs.</p>
+            </div>
           </div>
-        </div>
-      </section>
-    </>
-  )
+
+          <div className="flex flex-col md:flex-row items-center mb-6">
+            <div className="md:w-1/2 p-4">
+              <img src="/placeholder3.jpg" alt="Placeholder 3" className="w-full h-auto rounded-lg shadow-lg" />
+            </div>
+            <div className="md:w-1/2 p-4">
+              <h2 className="text-2xl font-bold mb-2">Why Choose Us</h2>
+              <p className="text-gray-700">Our proven track record in delivering successful projects, combined with our deep understanding of the software landscape, makes us the perfect partner to help you navigate and thrive in today's digital world.</p>
+            </div>
+          </div>
+        </section>
+
+        <footer className="w-full bg-blue-600 py-6">
+          <p className="text-center text-white">© 2024 SLaiTER. All rights reserved.</p>
+          <p className="text-center text-white">🇺🇸 American Owned and Operated 🇺🇸</p>
+          </footer>
+      </main>
+    </div>
+  );
 }
