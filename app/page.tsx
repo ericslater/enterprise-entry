@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   openGraph: {
     url: "https://slaiter.com/"
   },
+  description: "Applied AI For Your Business.",
+  icons: [ "/favicon.ico" ],
 };
 
 export default function Web() {
