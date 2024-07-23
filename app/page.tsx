@@ -30,33 +30,36 @@ export default function Web() {
         <SlaterHeader />
 
         <section className="w-11/12 md:w-10/12 lg:w-8/12 my-16">
-          <div className="grid md:grid-cols-2 gap-12 mb-16">
-            <div className="flex flex-col justify-center">
-              <h2 className="text-3xl font-bold mb-4 text-secondary">Our Mission</h2>
-              <p className="text-lg">At SLaiTER, we empower small and medium businesses with cutting-edge software solutions. Our expertise ensures your business stays ahead in the rapidly evolving technological landscape.</p>
-            </div>
-            <div className="order-first md:order-last">
+          {/* Mission Section */}
+          <div className="flex flex-col md:flex-row items-center mb-16">
+            <div className="w-full md:w-1/2 mb-6 md:mb-0">
               <Image src="/Mission.jpeg" alt="Our Mission" width={800} height={621} className="w-full h-auto rounded-lg shadow-xl" />
+            </div>
+            <div className="w-full md:w-1/2 md:pl-8">
+              <h2 className="text-3xl font-bold mb-4 text-secondary">Our Mission</h2>
+              <p className="text-lg">At SLaiTER, we're dedicated to empowering small and medium businesses with cutting-edge software solutions. Our expertise ensures your business stays ahead in the rapidly evolving technological landscape.</p>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 mb-16">
-            <div className="order-last md:order-first">
+          {/* Services Section */}
+          <div className="flex flex-col md:flex-row-reverse items-center mb-16">
+            <div className="w-full md:w-1/2 mb-6 md:mb-0 md:pl-8">
               <Image src="/Services.png" alt="Our Services" width={1912} height={1301} className="w-full h-auto rounded-lg shadow-xl" />
             </div>
-            <div className="flex flex-col justify-center">
+            <div className="w-full md:w-1/2">
               <h2 className="text-3xl font-bold mb-4 text-secondary">Our Services</h2>
               <p className="text-lg">We offer a comprehensive range of consulting services, including bespoke software development, seamless system integration, and transformative digital strategies. Our team of experts collaborates closely with you to craft solutions that precisely address your unique business challenges.</p>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="flex flex-col justify-center">
-              <h2 className="text-3xl font-bold mb-4 text-secondary">Why Choose Us</h2>
-              <p className="text-lg">With a proven track record of successful projects and a deep understanding of the software landscape, we are your ideal partner in navigating and thriving in the digital world. Our commitment to excellence and innovation sets us apart.</p>
-            </div>
-            <div className="order-first md:order-last">
+          {/* Why Choose Us Section */}
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="w-full md:w-1/2 mb-6 md:mb-0">
               <Image src="/WhyUs.png" alt="Why Choose Us" width={1526} height={1283} className="w-full h-auto rounded-lg shadow-xl" />
+            </div>
+            <div className="w-full md:w-1/2 md:pl-8">
+              <h2 className="text-3xl font-bold mb-4 text-secondary">Why Choose Us</h2>
+              <p className="text-lg">With a proven track record of successful projects and a deep understanding of the software landscape, we're your ideal partner in navigating and thriving in the digital world. Our commitment to excellence and innovation sets us apart.</p>
             </div>
           </div>
         </section>
