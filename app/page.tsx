@@ -37,7 +37,7 @@ export default function Web() {
             </div>
             <div className="w-full md:w-1/2 md:pl-8">
               <h2 className="text-3xl font-bold mb-4 text-secondary">Our Mission</h2>
-              <p className="text-lg">At SLaiTER, we're dedicated to empowering small and medium businesses with cutting-edge software solutions. Our expertise ensures your business stays ahead in the rapidly evolving technological landscape.</p>
+              <p className="text-lg">At SLaiTER, we are dedicated to empowering small and medium businesses with cutting-edge software solutions. Our expertise ensures your business stays ahead in the rapidly evolving technological landscape.</p>
             </div>
           </div>
 
@@ -59,7 +59,7 @@ export default function Web() {
             </div>
             <div className="w-full md:w-1/2 md:pl-8">
               <h2 className="text-3xl font-bold mb-4 text-secondary">Why Choose Us</h2>
-              <p className="text-lg">With a proven track record of successful projects and a deep understanding of the software landscape, we're your ideal partner in navigating and thriving in the digital world. Our commitment to excellence and innovation sets us apart.</p>
+              <p className="text-lg">With a proven track record of successful projects and a deep understanding of the software landscape, we are your ideal partner in navigating and thriving in the digital world. Our commitment to excellence and innovation sets us apart.</p>
             </div>
           </div>
         </section>
