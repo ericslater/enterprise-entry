@@ -1,83 +1,149 @@
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Metadata } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import SlaterHeader from "components/Header/SlaterHeader";
+import { Metadata } from "next"
+import SlaiterHeader from "components/Header/SlaterHeader"
 
 export const metadata: Metadata = {
-  title: "SLaiTER - Software Consulting",
+  title: "Slaiter",
   twitter: {
     card: "summary_large_image",
   },
   openGraph: {
-    url: "https://slaiter.com/"
+    url: "https://slaiter.com/",
+    title: "Slaiter",
+    description:
+      "Slaiter is a family office and merchant bank investing in the foundational systems that enable advanced technology and industrial power.",
+    siteName: "Slaiter",
+    type: "website",
   },
-  description: "Applied AI For Your Business.",
-  icons: [ "/favicon.ico" ],
-};
+  description:
+    "Slaiter is a family office and merchant bank investing in the foundational systems that enable advanced technology and industrial power.",
+  icons: ["/favicon.ico"],
+}
 
 export default function Web() {
   return (
-    <div className="bg-background text-text">
-      <Head>
-        <title>SLaiTER - Software Consulting</title>
-        <meta name="description" content="Applied AI For Your Business." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className="min-h-screen bg-background text-text">
+      <main className="flex flex-col">
+        <SlaiterHeader />
 
-      <main className="flex flex-col items-center justify-center min-h-screen">
-        <SlaterHeader />
+        <section className="mx-auto w-11/12 md:w-10/12 lg:w-8/12 py-14">
+          <div className="max-w-3xl text-lg leading-relaxed text-text/90">
+            <p>
+              We operate from the belief that modern technology is no longer purely digital. It is manufactured
+              infrastructure—dependent on energy, materials, industrial capacity, and the systems that coordinate them at
+              scale.
+            </p>
+            <p className="mt-6">
+              Our work centers on the foundational inputs that determine long-term economic strength, security, and human
+              progress.
+            </p>
+          </div>
 
-        <section className="w-11/12 md:w-10/12 lg:w-8/12 my-16">
-          {/* Mission Section */}
-          <div className="flex flex-col md:flex-row items-center mb-16">
-            <div className="w-full md:w-1/2 mb-6 md:mb-0">
-              <Image src="/Mission.jpeg" alt="Our Mission" width={800} height={621} className="w-full h-auto rounded-lg shadow-xl" />
+          <hr className="my-14 border-text/10" />
+
+          <h2 className="text-3xl font-bold text-secondary">Our Investment Framework</h2>
+          <p className="mt-4 max-w-3xl text-lg text-text/90">
+            Slaiter invests across five core pillars that enable advanced technology to be built, scaled, and sustained.
+          </p>
+
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div className="rounded-xl border border-text/10 bg-primary/30 p-6">
+              <h3 className="text-xl font-semibold">Energy</h3>
+              <p className="mt-3 text-text/85">
+                Energy is the primary constraint on industrial civilization. Slaiter focuses on reliable, scalable energy
+                systems that support advanced manufacturing, compute-intensive workloads, and national
+                infrastructure—across baseload generation, grid resilience, and next-generation energy technologies.
+              </p>
+              <p className="mt-3 text-text/85">
+                Energy abundance underpins economic growth, defense readiness, and technological leadership.
+              </p>
             </div>
-            <div className="w-full md:w-1/2 md:pl-8">
-              <h2 className="text-3xl font-bold mb-4 text-secondary">Our Mission</h2>
-              <p className="text-lg">At SLaiTER, we are dedicated to empowering small and medium businesses with cutting-edge software solutions. Our expertise ensures your business stays ahead in the rapidly evolving technological landscape.</p>
+
+            <div className="rounded-xl border border-text/10 bg-primary/30 p-6">
+              <h3 className="text-xl font-semibold">Materials &amp; Critical Inputs</h3>
+              <p className="mt-3 text-text/85">
+                Every technology begins as a physical system. We invest in the materials, resources, and critical inputs
+                required to manufacture semiconductors, batteries, aerospace systems, defense platforms, and industrial
+                infrastructure.
+              </p>
+              <p className="mt-3 text-text/85">
+                Control over these inputs determines who can build independently and who remains structurally dependent.
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-text/10 bg-primary/30 p-6">
+              <h3 className="text-xl font-semibold">Manufacturing &amp; Industrial Capacity</h3>
+              <p className="mt-3 text-text/85">
+                Innovation is irrelevant without production. Slaiter backs businesses that expand advanced manufacturing
+                capability, precision fabrication, shipbuilding, aerospace production, and the tooling required to convert
+                designs into deployed systems.
+              </p>
+              <p className="mt-3 text-text/85">Industrial capacity is a strategic asset—not a commodity.</p>
+            </div>
+
+            <div className="rounded-xl border border-text/10 bg-primary/30 p-6">
+              <h3 className="text-xl font-semibold">Supply Chains &amp; Logistics</h3>
+              <p className="mt-3 text-text/85">
+                Efficiency fails under stress. Resilience endures. We invest in infrastructure, platforms, and
+                intelligence that strengthen supply-chain resilience across energy, defense, technology, and strategic
+                materials—particularly in environments shaped by geopolitical risk.
+              </p>
+              <p className="mt-3 text-text/85">Secure supply chains are a prerequisite for sovereignty.</p>
+            </div>
+
+            <div className="rounded-xl border border-text/10 bg-primary/30 p-6 md:col-span-2">
+              <h3 className="text-xl font-semibold">Systems, Data &amp; Coordination</h3>
+              <p className="mt-3 text-text/85">
+                Complex systems require orchestration. Slaiter invests in the software, data platforms, and decision
+                systems that integrate energy, materials, manufacturing, and logistics into coherent operating
+                environments.
+              </p>
+              <p className="mt-3 text-text/85">
+                Coordination—not isolated optimization—is what enables scale, speed, and durability.
+              </p>
             </div>
           </div>
 
-          {/* Services Section */}
-          <div className="flex flex-col md:flex-row-reverse items-center mb-16">
-            <div className="w-full md:w-1/2 mb-6 md:mb-0 md:pl-8">
-              <Image src="/Services.png" alt="Our Services" width={1912} height={1301} className="w-full h-auto rounded-lg shadow-xl" />
-            </div>
-            <div className="w-full md:w-1/2">
-              <h2 className="text-3xl font-bold mb-4 text-secondary">Our Services</h2>
-              <p className="text-lg">We offer a comprehensive range of consulting services, including bespoke software development, seamless system integration, and transformative digital strategies. Our team of experts collaborates closely with you to craft solutions that precisely address your unique business challenges.</p>
-            </div>
+          <hr className="my-14 border-text/10" />
+
+          <h2 className="text-3xl font-bold text-secondary">How We Operate</h2>
+          <p className="mt-4 max-w-4xl text-lg text-text/90">
+            Slaiter operates with a long-term, principal-oriented mindset. We partner closely with founders, operators,
+            governments, and institutional capital to build durable platforms rather than transient assets.
+          </p>
+
+          <div className="mt-8 rounded-xl border border-text/10 bg-primary/30 p-6">
+            <p className="text-lg font-semibold">Our approach blends</p>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-text/85">
+              <li>Capital formation</li>
+              <li>Strategic structuring</li>
+              <li>Operational insight</li>
+              <li>Long-horizon thinking</li>
+            </ul>
+            <p className="mt-6 text-text/85">
+              We prioritize alignment, trust, and asymmetric outcomes over financial engineering alone.
+            </p>
           </div>
 
-          {/* Why Choose Us Section */}
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="w-full md:w-1/2 mb-6 md:mb-0">
-              <Image src="/WhyUs.png" alt="Why Choose Us" width={1526} height={1283} className="w-full h-auto rounded-lg shadow-xl" />
-            </div>
-            <div className="w-full md:w-1/2 md:pl-8">
-              <h2 className="text-3xl font-bold mb-4 text-secondary">Why Choose Us</h2>
-              <p className="text-lg">With a proven track record of successful projects and a deep understanding of the software landscape, we are your ideal partner in navigating and thriving in the digital world. Our commitment to excellence and innovation sets us apart.</p>
-            </div>
+          <hr className="my-14 border-text/10" />
+
+          <h2 className="text-3xl font-bold text-secondary">Our View</h2>
+          <div className="mt-6 max-w-3xl text-lg leading-relaxed text-text/90">
+            <p>Technology is becoming infrastructure.</p>
+            <p>Infrastructure determines power.</p>
+            <p className="mt-6">Slaiter invests where technology, industry, and security converge.</p>
           </div>
         </section>
-        <footer className="w-full bg-primary py-8">
-          <p className="text-center text-text text-sm">© 2024 SLaiTER LLC. All rights reserved.</p>
-          <p className="text-center text-text text-sm mt-2 mb-4">🇺🇸 American Owned and Operated 🇺🇸</p>
-          <div className="flex justify-center mb-4">
-            <a 
-              href="https://www.linkedin.com/in/eric-slater-66377676" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-accent hover:text-secondary transition-colors"
-            >
-              <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6" />
-            </a>
+
+        <footer className="w-full border-t border-text/10 bg-primary py-10">
+          <div className="mx-auto w-11/12 md:w-10/12 lg:w-8/12">
+            <p className="max-w-4xl text-sm leading-relaxed text-text/80">
+              Slaiter is a family office and merchant bank investing in the foundational systems that enable advanced
+              technology and industrial power.
+            </p>
+            <p className="mt-4 text-sm text-text/60">© {new Date().getFullYear()} Slaiter. All rights reserved.</p>
           </div>
         </footer>
       </main>
     </div>
-  );
+  )
 }

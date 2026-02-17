@@ -1,31 +1,20 @@
-'use client'
-import React from 'react';
-import { Cursor, useTypewriter } from 'react-simple-typewriter';
+import React from "react"
 
-const SlaterHeader = () => {
-    const [text] = useTypewriter({
-        words: ['Artificial Intelligence', 'Tech Roadmapping', 'Software Architecture'],
-        loop: 0,
-        typeSpeed: 70,
-        deleteSpeed: 0,
-        delaySpeed: 2000,
-    });
+const SlaiterHeader = () => {
+  return (
+    <header className="w-full bg-primary py-14">
+      <div className="mx-auto w-11/12 md:w-10/12 lg:w-8/12">
+        <p className="text-sm tracking-[0.2em] text-text/70">SLAITER</p>
+        <h1 className="mt-3 text-5xl font-extrabold leading-tight text-text md:text-6xl">
+          Investing in the Foundations of Technological and National Power
+        </h1>
+        <p className="mt-6 max-w-3xl text-lg leading-relaxed text-text/90">
+          Slaiter is a family office and merchant bank focused on investments at the intersection of technology,
+          industry, and national security.
+        </p>
+      </div>
+    </header>
+  )
+}
 
-    return (
-        <header className="w-full bg-primary py-12">
-            <h1 className="text-7xl font-extrabold text-text text-center">
-                SL<span className="text-secondary">ai</span>TER
-            </h1>
-            <p className="text-2xl text-text text-center mt-4">
-                Applied{' '}
-                <span className="text-secondary font-bold">
-                    {text}
-                    <Cursor cursorColor="#4CAF50" />
-                </span>
-            </p>
-            <p className="text-2xl text-text text-center mt-2">For Your Business.</p>
-        </header>
-    );
-};
-
-export default SlaterHeader;
+export default SlaiterHeader
