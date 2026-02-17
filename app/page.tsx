@@ -140,6 +140,7 @@ export default function Web() {
               Slaiter is a family office and merchant bank investing in the foundational systems that enable advanced
               technology and industrial power.
             </p>
+            <p className="mt-4 text-sm text-text/60">US-based. American owned and operated.</p>
             <p className="mt-4 text-sm text-text/60">© {new Date().getFullYear()} Slaiter. All rights reserved.</p>
           </div>
         </footer>
